@@ -1,59 +1,59 @@
-# WeddingShots
+☁️ Kübra & Ege Cloud - Anı Yakalama Uygulaması
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+Bu proje, Kübra & Ege'nin en mutlu gününde misafirlerin çektikleri o güzel kareleri doğrudan dijital düğün albümüne (Google Drive) aktarmalarını sağlayan, özel olarak geliştirilmiş bulut tabanlı bir fotoğraf yükleme web uygulamasıdır.
+Hızlı, güvenli ve modern yapısıyla misafirlerin anılarını saniyeler içinde gelin ve damada ulaştırmasını sağlar.
 
-## Development server
+🎨 Özellikler
 
-To start a local development server, run:
+📸 Kesintisiz Fotoğraf ve Video Yükleme
 
-```bash
-ng serve
-```
+* Misafirler doğrudan telefonlarının kamerasını açıp fotoğraf çekebilir veya galerilerinden çoklu seçim yapabilirler.
+* Performans ve ağ kararlılığı için tek seferde en fazla 15 fotoğraf yükleme sınırı (Gerekirse art arda defalarca kez kullanılabilir).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+✨ Modern ve Şık Arayüz (Glassmorphism)
 
-## Code scaffolding
+* Hareketli gradient arka plan ve "buzlu cam" (glassmorphism) efektli zarif kart tasarımı.
+* Göz yormayan, düğün konseptine uygun şık ikonlar ve tipografi.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🚀 Anlık İlerleme ve Durum Bildirimi
 
-```bash
-ng generate component component-name
-```
+* Yükleme sırasında misafiri bilgilendiren canlı sayaç ("Harika kareler yükleniyor: 3 / 10 ⏳").
+* İşlem sırasında ekranın kilitlenmemesi için uyarı mesajı.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🛡️ Hata Yönetimi ve Akıllı Tekrar Deneme
 
-```bash
-ng generate --help
-```
+* Olası bir internet kopması durumunda, başarılı yüklemeleri kaydederken, başarısız olanları hafızada tutar.
+* "Kalanları Tekrar Dene 🔄" butonu ile süreci kaldığı yerden devam ettirir.
 
-## Building
+☁️ Google Ekosistemi Entegrasyonu
 
-To build the project run:
+* Yüklenen fotoğraflar arka planda otomatik olarak Base64 formatına çevrilir.
+* Google Apps Script aracılığıyla doğrudan Kübra & Ege'nin özel Google Drive klasörüne tarih ve saat damgasıyla (timestamp) kaydedilir.
 
-```bash
-ng build
-```
+💻 Teknoloji Yığını
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+* **Frontend:** Angular (Standalone Components, Signals ile state yönetimi).
+* **Backend:** Google Apps Script (REST API olarak görev yapar).
+* **Deployment & Hosting:** GitHub Pages üzerinden sunulur, `kubraegecloud.com.tr` özel alan adına bağlıdır ve tam SSL (HTTPS) korumasına sahiptir.
 
-## Running unit tests
+🛠️ Kullanım
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Uygulamaya `https://kubraegecloud.com.tr` adresi üzerinden erişin.
+2. "Galeriden Seç veya Fotoğraf Çek" butonuna dokunarak anılarınızı seçin.
+3. Seçilen dosya sayısı ekranda belirdiğinde "Hemen Gönder 🚀" butonuna basın.
+4. Ekranda çıkan yükleme animasyonunu ve ilerleme durumunu takip edin.
+5. Başarı mesajını ("Muhteşem! Fotoğraflarınız albümümüze eklendi") görene kadar sayfayı kapatmayın.
 
-```bash
-ng test
-```
+⚡ Gereksinimler
 
-## Running end-to-end tests
+* Modern bir web tarayıcısı (Chrome, Safari, Edge, Firefox vb.)
+* Kamera veya fotoğraf galerisine erişim izni (HTTPS zorunluluğu).
+* Aktif internet bağlantısı.
 
-For end-to-end (e2e) testing, run:
+💡 Notlar
 
-```bash
-ng e2e
-```
+* Uygulama "Mobile-First" mantığıyla tasarlanmıştır ve her türlü ekran boyutunda kusursuz çalışır (Tamamen responsive).
+* Sistemin ve ağın yorulmaması adına, fotoğraflar eşzamanlı (paralel) değil, asenkron ve sıralı (sequential) bir döngü ile tek tek yüklenir.
+* Angular CLI ile derlenen statik dosyalar üzerinden çalıştığı için sunucu çökme riski barındırmaz.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+💖 Hazırlayan: Kübra & Ege | 5 Temmuz 2026
